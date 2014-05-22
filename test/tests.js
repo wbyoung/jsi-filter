@@ -10,6 +10,31 @@ describe('filter()', function() {
     });
     expect(even).to.eql([2, 4, 6]);
   });
+
+  it('works with people', function() {
+    var people = [
+      { name: "Sam" },
+      { name: "Carlo" },
+      { name: "Adam" },
+      { name: "Josh" }
+    ];
+    var friends = filter(people, function(person) {
+      return person.name[0].toLowerCase() < 'n';
+    });
+    expect(friends).to.eql([
+      { name: "Carlo" },
+      { name: "Adam" },
+      { name: "Josh" }
+    ]);
+  });
+
+  it('finds big numbers', function() {
+    var numbers = [10, 20, 100, 101, 389, 1];
+    var big = filter(numbers, function(n) {
+      return n > 100;
+    });
+    expect(big).to.eql([101, 389]);
+  });
 });
 
 describe('map()', function() {

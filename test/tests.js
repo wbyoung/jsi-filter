@@ -1,5 +1,6 @@
 var expect = require('chai').expect;
 var filter = require('..').filter;
+var map = require('..').map;
 
 describe('filter()', function() {
   it('works for numbers', function() {
@@ -8,5 +9,22 @@ describe('filter()', function() {
       return (n % 2) === 0;
     });
     expect(even).to.eql([2, 4, 6]);
+  });
+});
+
+describe('map()', function() {
+  it('works for people', function() {
+    var people = [
+      { name: "Sam" },
+      { name: "Carlo" },
+      { name: "Adam" },
+      { name: "Josh" }
+    ];
+
+    var names = map(people, function(person) {
+      return person.name;
+    });
+
+    expect(names).to.eql(['Sam', 'Carlo', 'Adam', 'Josh']);
   });
 });

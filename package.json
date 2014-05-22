@@ -1,0 +1,17 @@
+{
+  "name": "jsi-filter",
+  "version": "0.1.0",
+  "description": "Filter example",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report $(if [ \"$TRAVIS\" ]; then echo lcovonly; else echo html; fi) -- && if [ \"$TRAVIS\" ]; then cat ./coverage/lcov.info | ./node_modules/.bin/coveralls; fi"
+  },
+  "author": "Whitney Young",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "coveralls": "^2.10.0",
+    "istanbul": "^0.2.10",
+    "mocha": "^1.19.0"
+  }
+}

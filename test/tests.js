@@ -11,6 +11,15 @@ describe('filter()', function() {
     expect(even).to.eql([2, 4, 6]);
   });
 
+  it('works for people', function() {
+    var people = ['adam', 'carlo', 'tian', 'ariel', 'grant', 'dmitry', 'sam', 'whitney', 'josh'];
+    var beginsWithA = filter(people, function(name) {
+      return (name.slice(0,1) === 'a');
+    });
+    expect(beginsWithA).to.eql([ 'adam', 'ariel' ]);
+  });
+
+
   it('works with people', function() {
     var people = [
       { name: "Sam" },
@@ -34,8 +43,12 @@ describe('filter()', function() {
       return n > 100;
     });
     expect(big).to.eql([101, 389]);
+
   });
 });
+
+/**
+  * I am not using this function so I am commenting out the test:
 
 describe('map()', function() {
   it('works for people', function() {
@@ -53,3 +66,5 @@ describe('map()', function() {
     expect(names).to.eql(['Sam', 'Carlo', 'Adam', 'Josh']);
   });
 });
+
+*/

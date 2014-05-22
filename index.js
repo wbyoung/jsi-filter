@@ -1,10 +1,9 @@
-module.exports.filter = function(array, fn) {
-};
-
-module.exports.map = function(array, fn) {
-  var result = [];
-  array.forEach(function(item) {
-    result.push(fn(item));
-  });
-  return result;
+module.exports.filter = function (array, fn) {
+  resultsArray = [];
+    array.forEach(function(item) {
+      if (fn(item)) {
+        resultsArray.push(item);
+      }
+    });
+  return resultsArray;
 };

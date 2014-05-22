@@ -1,6 +1,6 @@
 # JSI Filter
 
-[![NPM version][npm-image]][npm-url] [![Build status][travis-image]][travis-url] [![Code Climate][codeclimate-image]][codeclimate-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][david-image]][david-url]
+[![Build status][travis-image]][travis-url] [![Code Climate][codeclimate-image]][codeclimate-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][david-image]][david-url]
 
 JSI Filter challenge
 
@@ -11,8 +11,6 @@ off of this and absolutely should not use it in production.
 
 [travis-url]: http://travis-ci.org/wbyoung/jsi-filter
 [travis-image]: https://secure.travis-ci.org/wbyoung/jsi-filter.png?branch=master
-[npm-url]: https://npmjs.org/package/jsi-filter
-[npm-image]: https://badge.fury.io/js/jsi-filter.png
 [codeclimate-image]: https://codeclimate.com/github/wbyoung/jsi-filter.png
 [codeclimate-url]: https://codeclimate.com/github/wbyoung/jsi-filter
 [coverage-image]: https://coveralls.io/repos/wbyoung/jsi-filter/badge.png

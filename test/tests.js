@@ -7,6 +7,6 @@ describe('filter()', function() {
     var even = filter(numbers, function(n) {
       return (n % 2) === 0;
     });
-    expect(names).to.eql(['Sam', 'Carlo', 'Adam', 'Josh']);
+    expect(names).to.eql([2, 4, 6]);
   });
 });
